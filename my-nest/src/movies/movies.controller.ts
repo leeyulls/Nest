@@ -12,12 +12,12 @@ export class MoviesController {
     search(@Query('name') movieName:string){
         return `영화 제목으로 검색중... : ${movieName}`;
     }
-
     @Get("/:id")
     getOne(@Param('id') movieId:string){
         return `This will return one movie with the id: ${movieId}`;
     }
   
+
     @Post()
     create(@Body() movieData){
         console.log(movieData);
@@ -25,10 +25,13 @@ export class MoviesController {
         return movieData;
     }
 
+
+    
     @Delete("/:id")
     remove(@Param('id') movieId:string){
         return 'This will delete a movie : ' +movieId ;
     }
+
 
     //@Put() // 모두 업데이트
     //@Patch // 일부 업데이트
