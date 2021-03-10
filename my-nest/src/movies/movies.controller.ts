@@ -26,7 +26,7 @@ export class MoviesController {
     }
 
 
-    
+
     @Delete("/:id")
     remove(@Param('id') movieId:string){
         return 'This will delete a movie : ' +movieId ;
@@ -46,6 +46,9 @@ export class MoviesController {
     }
 
   
+
+
+    
 
 
 
