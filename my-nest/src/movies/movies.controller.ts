@@ -17,7 +17,7 @@ export class MoviesController {
     getOne(@Param('id') movieId:string){
         return `This will return one movie with the id: ${movieId}`;
     }
-
+  
     @Post()
     create(@Body() movieData){
         console.log(movieData);
